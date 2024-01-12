@@ -1,0 +1,20 @@
+def room(width , length , height, door, window):
+    total = (((2 * length * height) + (2 * length * height) + (2 * width * height)) - (door * 20) - (window *15))
+    return total/400
+
+room_0 = (room(14, 14, 8, 2, 3))
+room_1 = (room(12, 12, 8, 2, 3))
+room_2 = (room(12, 12, 8, 2, 3))
+room_3 = (room(12, 12, 8, 2, 3))
+room_4 = (room(14, 14, 8, 2, 3))
+room_5 = (room(8, 6, 8, 1, 1))
+room_6 = (room(8, 6, 8, 1, 1))
+room_7 = (room(10, 12, 8, 1, 2))
+room_8 = (room(6, 2, 8, 1, 0))
+room_9 = (room(10, 12, 8, 1, 2))
+room_10 = (room(6, 2, 8, 1, 0))
+room_11 = (room(8, 6, 8, 1, 1))
+
+calc_amt_paint= round(room_0 + room_1 + room_2 + room_3 + room_4 + room_5 + room_6 + room_7 + room_8 + room_9 + room_10 + room_11)
+
+print("The total amount of paint required is :", calc_amt_paint, "gallons")
